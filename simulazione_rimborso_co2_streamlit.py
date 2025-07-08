@@ -49,9 +49,9 @@ Analisi semplificata dell'effetto di un rimborso del costo delle quote CO₂ per
 """)
 
 # --- Input utente con chiavi univoche ---
-p_gas = st.number_input("Prezzo medio gas (€/MWh)", value=35.0, min_value=0.0, key="p_gas_rimborso")
-pun = st.number_input("PUN medio annuo (€/MWh)", value=110.0, min_value=0.0, key="pun_rimborso")
-prezzo_co2 = st.number_input("Prezzo quota CO₂ ETS (€/tCO₂)", value=70.0, min_value=0.0, key="prezzo_co2_rimborso")
+p_gas = st.number_input("Prezzo medio gas (€/MWh)", value=36.0, min_value=0.0, key="p_gas_rimborso")
+pun = st.number_input("PUN medio annuo (€/MWh)", value=109.0, min_value=0.0, key="pun_rimborso")
+prezzo_co2 = st.number_input("Prezzo quota CO₂ ETS (€/tCO₂)", value=65.0, min_value=0.0, key="prezzo_co2_rimborso")
 fattore_emissione = st.number_input("Fattore di emissione centrali gas (tCO₂/MWh elettrico)", value=0.36, min_value=0.0, max_value=1.0, key="fattore_emissione_rimborso")
 energia_borsa = st.number_input("Energia annua in borsa (MWh)", value=285_000_000.0, min_value=1.0, key="energia_borsa_rimborso")
 frazione_gas = st.slider("Frazione energia da gas (%)", min_value=0, max_value=100, value=40, key="frazione_gas_rimborso") / 100
